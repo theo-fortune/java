@@ -1,9 +1,10 @@
 class Hello {
-  public static void main(String args[]) 
-  {
-    int x = 6;
+  public static void main(String args[]) {
+    int x = 7;
     int y = 5;
-    boolean result = x == y;
-    System.out.println(result);
+    int a = 5;
+    int b = 9;
+    boolean result = a > b;
+    System.out.println(!result);
   }
 }
