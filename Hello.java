@@ -1,28 +1,12 @@
 class Hello {
   public static void main(String args[]) {
-    int days = 5;
-    switch (days) {
-      case 1:
-        System.out.println("Monday");
-        break;
-      case 2:
-        System.out.println("Tuesday");
-        break;
-      case 3:
-        System.out.println("Wednesday");
-        break;
-      case 4:
-        System.out.println("Thursday");
-        break;
-      case 5:
-        System.out.println("Friday");
-        break;
-      case 6:
-        System.out.println("Saturday");
-        break;
-      case 7:
-        System.out.println("Sunday");
-        break;
-    }
+    String days = "Monday";
+    String result = "";
+    result = switch (days) {
+      case "Saturday", "Sunday" -> "6am";
+      case "Monday" -> "8am";
+      default -> "9am";
+    };
+    System.out.println(result);
   }
 }
