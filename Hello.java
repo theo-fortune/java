@@ -9,4 +9,4 @@ class Hello {
     };
     System.out.println(result);
   }
-}
+};
