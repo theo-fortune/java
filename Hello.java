@@ -1,12 +1,15 @@
 class Hello {
   public static void main(String args[]) {
-    String days = "Monday";
-    String result = "";
-    result = switch (days) {
-      case "Saturday", "Sunday" -> "6am";
-      case "Monday" -> "8am";
-      default -> "9am";
-    };
-    System.out.println(result);
+    int i = 1;
+    while (i <= 4) {
+      System.out.println("Hi " + i);
+      int j = 1;
+      while (j<=3) {
+        System.out.println("Hello " + j);
+        j++;
+      }
+      i++;
+    }
+    System.out.println("Bye " + i);
   }
 };
