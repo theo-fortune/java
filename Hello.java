@@ -1,8 +1,18 @@
-class Hello {
-  public static void main(String args[]) {
-    for (int i = 1; i <= 4; i++) {
-      System.out.println("Hi " + i);
-    }
+class Calculator {
+  public int add(int n1, int n2) {
+    int r = n1 + n2;
+    return  r;
   }
-  // * If you want to get the output once even if the condition is false, use a doWhile loop
-};
+}
+
+public class Hello {
+  public static void main(String args[]) {
+    int num1 = 4;
+    int num2 = 5;
+    Calculator calc = new Calculator();
+    int result = calc.add(num1, num2);
+    System.out.println(result);
+  }
+}
+
+// * Baby don't hurt me
