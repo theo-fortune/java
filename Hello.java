@@ -1,23 +1,15 @@
-class Computer {
-  public void playMusic() {
-    System.out.println("Music Playing...");
-  }
-
-  public String getMeAPen(int cost) {
-    if (cost >=10) {
-      return "Pen";
-    } else {
-      return "Nothing";
-    }
-  }
-}
-
 public class Hello {
   public static void main(String args[]) {
-    Computer obj = new Computer();
-    obj.playMusic();
-    String str = obj.getMeAPen(2);
-    System.out.println(str);
+    int nums[] = new int[4];
+
+    nums[0] = 3;
+    nums[1] = 6;
+    nums[2] = 4;
+    nums[3] = 9;
+
+    for (int i = 0; i < 4; i++) {
+      System.out.println(nums[i]);
+    }
   }
 }
 
